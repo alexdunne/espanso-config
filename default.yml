@@ -7,6 +7,14 @@
 # Matches are the substitution rules, when you type the "trigger" string
 # it gets replaced by the "replace" string.
 matches:
+  - trigger: :date
+    replace: "{{date}}"
+    vars:
+      - name: date
+        type: date
+        params:
+          format: "%Y-%m-%d"
+
   - triggers: [":daily-log", ":dl"]
     replace: |
       ---
