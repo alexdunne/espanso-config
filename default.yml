@@ -25,3 +25,8 @@ matches:
 
   - triggers: [":email", ":hi@"]
     replace: "hi@alexdunne.net"
+
+  - trigger: :sig
+    replace: |
+      Kind regards,
+      Alex
