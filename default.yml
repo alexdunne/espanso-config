@@ -29,7 +29,7 @@ matches:
       - name: date
         type: date
         params:
-          format: "%B%e, %Y"
+          format: "%B %e, %Y"
 
   - triggers: [":email", ":hi@"]
     replace: "hi@alexdunne.net"
